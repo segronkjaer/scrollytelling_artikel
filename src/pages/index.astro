@@ -4,6 +4,7 @@ import Button from '../components/Button.astro';
 import Link from '../components/Link.astro';
 import { Image } from 'astro:assets';
 import rap from "../assets/images/rap.webp";
+import hero_grafik from "../assets/images/hero_grafik.webp";
 ---
 <MainLayout 
 title="Rap: Genren og dens historie"
@@ -12,15 +13,10 @@ ogtitle="Rap: Genren og dens historie"
 ogdescription="På denne side kan du få læse op rapgenren og dens historie">
 
 	<article class="py-8 px-48 m-32">
-		<h1 class="text-5xl font-bold pb-8">Rap: Genren og dens historie</h1>
-		<Image class="pb-8" src={rap} alt="rap_koncert"></Image>
+		<Image class="pb-8 pr-24" src={hero_grafik} alt="rap_koncert"></Image>
 		<div class="py-8">
-		<h2 class="text-3xl font-bold">Om rap</h2>
 		<p class="pt-2">Rap er en overvejende afrikansk-amerikansk musikstil, som med afsæt i 1970’ernes New York har udviklet sig til et verdensomspændende, populærmusikalsk fænomen. Rap er semi-talte rim, rytmisk deklameret over et beat (som traditionelt leveres af en DJ). Rap er det mest udbredte element i hiphopkulturen, men indgår også i andre genrer som pop, dancehall, EDM mv. Rap omtales undertiden som MC’ing, hvor MC står for master of ceremony eller microphone controller.</p>
 		</div>
-		<div class="py-8">
-		<h2 class="text-3xl font-bold">Eksempler på kendte rappere</h2>
-		<p class="pt-2">Kendte amerikanske rappere er fx KRS-One, Jay-Z, Tupac, Missy Elliot, Eminem. Af danske rappere kan nævnes fx Jokeren, L.O.C., Gilli og Tessa.</p></div>
 		<div class="py-8">
 		<h2 class="text-3xl font-bold">Rappens oprindelse</h2>
 		<p class="pt-2">Rapmusikken udviklede sig i sammenhæng med de block parties, som opstod i 1970’ernes New York, nærmere bestemt bydelen South Bronx. DJ-pionerer som DJ Kool Herc og Grandmaster Flash var inspireret af jamaicansk reggae og sound system-kultur, hvor udendørs fester blev anført af pladevendere (selectors), som opildnede dansegulvet med rimede tilråb og improvisationer (toasting). Coke La Rock, som ofte beskrives som den første rapper, blev hyret af DJ Kool Herc til at gøre netop det.</p>
@@ -29,6 +25,10 @@ ogdescription="På denne side kan du få læse op rapgenren og dens historie">
 		<h2 class="text-3xl font-bold">Stilistisk og genremæssig udvikling</h2>
 		<p class="pt-2">Med hiphopkulturen udvikledes rappen med fokus på skills. Det vil sige rappernes færdigheder ud i rim, metaforer, evnen til at fortælle en historie, timing, attitude, flow etc. Også samspillet mellem DJ og flere rappere i et crew blev vigtigt (fx hos Grandmaster Flash and the Furious Five eller Afrika Bambaataa og the Soulsonic Force).</p>
 	</div>
+	<Image class="pb-8 pt-8 grayscale" src={rap} alt="rap_koncert"></Image>
+	<div class="py-8">
+		<h2 class="text-3xl font-bold">Eksempler på kendte rappere</h2>
+		<p class="pt-2">Kendte amerikanske rappere er fx KRS-One, Jay-Z, Tupac, Missy Elliot, Eminem. Af danske rappere kan nævnes fx Jokeren, L.O.C., Gilli og Tessa.</p></div>
 	<div class="py-8">
 		<h2 class="text-3xl font-bold">De 3 rappere, der tjente mest i 2023</h2>
 		<ul class="list-disc pt-2">
